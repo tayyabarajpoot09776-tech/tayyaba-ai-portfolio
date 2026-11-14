@@ -1,0 +1,300 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#07111f"><meta name="description" content="A modern healthcare information hub to explore symptoms, understand warning signs and find nearby medical care."><title>VITALIS | Intelligent Healthcare Navigation</title><style>
+:root{color-scheme:dark;--bg:#06101c;--panel:#0c1c2b;--line:#234052;--muted:#a5bdcc;--a:#67f0d0;--b:#82a9ff}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:#effaff;font-family:Inter,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6;overflow-x:hidden}body:before{content:"";position:fixed;inset:0;pointer-events:none;background:radial-gradient(ellipse at 75% 0%,#183d53aa,transparent 55%),radial-gradient(ellipse at 0% 80%,#102b3a99,transparent 50%);z-index:-1}a{color:inherit;text-decoration:none}button,input,select{font:inherit}button{cursor:pointer}.wrap{width:min(1150px,calc(100% - 36px));margin:auto}.nav{position:sticky;top:0;z-index:20;background:#071421e8;backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.navin{min-height:72px;display:flex;align-items:center;justify-content:space-between;gap:15px}.brand{font-size:1.25rem;font-weight:900;letter-spacing:.14em}.brand span{color:var(--a)}.links{display:flex;gap:22px;flex-wrap:wrap;font-size:.88rem;color:#d4e7ee}.links a:hover{color:var(--a)}.tag{display:inline-flex;gap:8px;align-items:center;padding:7px 13px;border:1px solid #3a807a;border-radius:30px;color:var(--a);background:#0d302e;font-size:.76rem;font-weight:700;letter-spacing:.07em}.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:30px;min-height:560px;padding:78px 0 64px}.hero h1{font-size:clamp(2.5rem,5.4vw,5rem);line-height:1.08;letter-spacing:-.055em;margin:22px 0}.gradient{background:linear-gradient(110deg,var(--a),var(--b));background-clip:text;-webkit-background-clip:text;color:transparent}.lead{font-size:1.08rem;color:var(--muted);max-width:600px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:27px}.btn{border:1px solid #467c82;background:transparent;color:white;border-radius:12px;padding:13px 20px;font-weight:750;display:inline-block;transition:transform .2s,background .2s}.btn:hover{transform:translateY(-3px);background:#173345}.primary{background:linear-gradient(120deg,#6af3cf,#7eaaff);border:0;color:#071524}.orbbox{height:350px;display:grid;place-items:center;perspective:800px;position:relative}.orb{width:255px;height:255px;border-radius:50%;background:radial-gradient(circle at 29% 23%,#d1fffa,#54e4d4 12%,#256ca1 36%,#0a1e3b 63%,#041220 75%);box-shadow:0 0 70px #35d9cf44,inset -20px -30px 60px #000a;animation:float 6s ease-in-out infinite;position:relative;transform-style:preserve-3d}.orb:after{content:"✚";position:absolute;inset:0;display:grid;place-items:center;font-size:95px;color:#b1fff3cc;text-shadow:0 0 25px #75fce3}.ring{position:absolute;width:335px;height:130px;border:2px solid #75fce388;border-radius:50%;transform:rotate(-29deg);box-shadow:0 0 25px #4ee5e333;animation:spin 12s linear infinite}.ring.two{transform:rotate(60deg);width:300px;height:160px;animation-duration:16s}.orbnote{position:absolute;bottom:0;color:#a7d6e4;font-size:.8rem;text-align:center}@keyframes float{50%{transform:translateY(-15px) rotateY(15deg)}}@keyframes spin{50%{transform:rotate(150deg)}to{transform:rotate(330deg)}}section{padding:66px 0;scroll-margin-top:75px}.eyebrow{color:var(--a);font-size:.8rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.sectionhead h2{font-size:clamp(1.9rem,3.5vw,2.8rem);line-height:1.2;margin:10px 0}.sectionhead p{color:var(--muted);max-width:740px}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;margin-top:27px}.card{border:1px solid var(--line);background:linear-gradient(145deg,#112b3a,#0a1929);border-radius:20px;padding:25px;min-width:0;transition:transform .25s,border-color .25s}.card:hover{transform:translateY(-4px);border-color:#64c8c0}.card .ico{font-size:2rem}.card h3{margin:10px 0 8px}.card p,.card li{color:var(--muted);font-size:.94rem}.notice{border:1px solid #578d92;background:#10303a;padding:17px 20px;border-radius:14px;color:#d8f9f7;margin:25px 0}.tool{background:linear-gradient(130deg,#102c3d,#0b1c2d);border:1px solid #326271;border-radius:24px;padding:clamp(18px,3vw,34px);margin-top:25px}.field{display:block;font-size:.87rem;font-weight:750;margin:16px 0 8px}select,input{width:100%;border:1px solid #3d6271;border-radius:12px;background:#081b2a;color:white;padding:14px;outline-offset:3px}select:focus,input:focus{outline:2px solid var(--a)}.checkgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:17px 0}.check{display:flex;gap:10px;align-items:flex-start;border:1px solid #315466;border-radius:12px;padding:12px;background:#0b2332}.check input{width:auto;accent-color:#5de6c9;margin-top:5px}.result{display:none;margin-top:22px;padding:20px;border:1px solid #478e91;background:#092c32;border-radius:15px}.result.show{display:block}.result h3{margin:0 0 10px;color:#8dfce0}.result ul{padding-left:22px}.result li{margin:7px 0}.warn{color:#ffd1b1}.searchrow{display:grid;grid-template-columns:1fr auto;gap:10px}.small{font-size:.85rem;color:var(--muted)}.foot{border-top:1px solid var(--line);padding:30px 0 50px;color:var(--muted);font-size:.9rem}.footin{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.pill{display:inline-block;border:1px solid #386779;padding:6px 12px;border-radius:50px;color:#b4e6e6;font-size:.78rem;margin:4px 4px 0 0}.hide{display:none!important}@media(max-width:800px){.hero{grid-template-columns:1fr;padding:52px 0 25px;min-height:0}.orbbox{height:280px;order:-1}.orb{width:185px;height:185px}.orb:after{font-size:65px}.ring{width:240px;height:95px}.ring.two{width:230px;height:110px}.grid{grid-template-columns:1fr 1fr}.links{gap:12px;font-size:.76rem}.navin{padding:12px 0;align-items:flex-start;flex-direction:column}.hero h1{font-size:clamp(2.3rem,9vw,4rem)}}@media(max-width:540px){.grid,.checkgrid,.searchrow{grid-template-columns:1fr}.card{padding:20px}.orbbox{height:245px}section{padding:45px 0}.hero{gap:12px}.navin{gap:9px}.links{gap:12px}.btn{width:100%;text-align:center}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+.medicine-meta{display:grid;grid-template-columns:1fr 1fr;gap:12px}.medicine-meta>div{padding:13px;background:#0b2230;border-radius:12px;border:1px solid #2b5762}.medicine-meta strong{color:#b7fff0}.medicine-meta p{margin:7px 0 0}@media(max-width:600px){.medicine-meta{grid-template-columns:1fr}} .founder-intro{margin-top:22px;padding:17px 20px;border-left:3px solid var(--a);background:linear-gradient(90deg,#12313eaa,transparent);border-radius:0 14px 14px 0;max-width:590px}.founder-name{display:block;font-size:1.12rem;font-weight:850;color:#fff}.founder-role{display:block;font-size:.82rem;color:var(--a);font-weight:700;letter-spacing:.025em;margin-top:2px}.founder-intro p{margin:9px 0 0;color:#b9d1df;font-size:.94rem;line-height:1.6}@media(max-width:540px){.founder-intro{padding:13px 15px;margin-top:16px}} 
+/* VITALIS assistant */
+.vitalis-chat-launcher{position:fixed;right:22px;bottom:22px;z-index:1000;border:0;border-radius:999px;padding:14px 19px;background:linear-gradient(120deg,#6af3cf,#7eaaff);color:#071524;font-weight:850;box-shadow:0 12px 35px #0008;display:flex;align-items:center;gap:10px}
+.vitalis-chat-launcher .chat-symbol{font-size:1.35rem}
+.vitalis-chat-panel{position:fixed;right:22px;bottom:88px;width:min(390px,calc(100vw - 28px));height:min(590px,calc(100vh - 125px));z-index:1001;background:#091a29;border:1px solid #3b6977;border-radius:20px;box-shadow:0 20px 70px #000b;display:none;overflow:hidden;flex-direction:column}
+.vitalis-chat-panel.open{display:flex}
+.vitalis-chat-head{padding:16px;background:linear-gradient(110deg,#123b45,#142b48);display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #315466}
+.vitalis-chat-head strong{display:block;color:#eaffff}
+.vitalis-chat-head small{color:#a9cbd5}
+.vitalis-chat-close{background:transparent;border:1px solid #54808b;color:white;border-radius:9px;padding:5px 10px}
+.vitalis-chat-messages{padding:15px;overflow-y:auto;flex:1;display:flex;flex-direction:column;gap:11px}
+.vitalis-chat-msg{max-width:90%;padding:11px 13px;border-radius:14px;font-size:.9rem;white-space:pre-wrap;line-height:1.5}
+.vitalis-chat-msg.bot{align-self:flex-start;background:#132f40;border:1px solid #315466;color:#e7f6fb;border-bottom-left-radius:4px}
+.vitalis-chat-msg.user{align-self:flex-end;background:#1b665f;color:#fff;border-bottom-right-radius:4px}
+.vitalis-chat-quick{display:flex;gap:7px;flex-wrap:wrap;padding:0 13px 10px}
+.vitalis-chat-quick button{border:1px solid #397080;border-radius:20px;background:#102b3b;color:#c9f8f0;padding:7px 10px;font-size:.78rem}
+.vitalis-chat-form{display:flex;gap:8px;padding:12px;border-top:1px solid #294958;background:#0b2030}
+.vitalis-chat-form input{min-width:0;flex:1;padding:11px}
+.vitalis-chat-form button{border:0;border-radius:11px;background:#72e9d0;color:#071524;font-weight:850;padding:0 15px}
+.vitalis-chat-disclaimer{padding:0 13px 10px;color:#9db8c6;font-size:.72rem}
+@media(max-width:540px){.vitalis-chat-launcher{right:14px;bottom:14px}.vitalis-chat-panel{right:10px;bottom:76px;width:calc(100vw - 20px);height:min(590px,calc(100vh - 95px))}}
+
+</style></head><body><header class="nav"><div class="wrap navin"><a href="#top" class="brand">VITAL<span>IS</span><span style="font-size:.55rem;letter-spacing:0;color:#aac8d4;margin-left:8px">HEALTH INTELLIGENCE</span></a><nav class="links" aria-label="Main navigation"><a href="#explorer">Symptoms</a><a href="#conditions">Conditions</a><a href="#medicines">Medicines</a><a href="#care">Find Care</a><a href="#technology">Technology</a><a href="#about">About</a></nav></div></header><main id="top"><div class="wrap hero"><div><span class="tag">✦ INTELLIGENT HEALTH NAVIGATION</span><div class="founder-intro"><span class="founder-name">Tayyaba Rajpoot</span><span class="founder-role">AI Engineer &amp; Entrepreneur · Healthcare Innovation</span><p>Building human-centered healthcare technology to make trusted health information easier to understand and medical care easier to find.</p></div><h1>Understand your health.<br><span class="gradient">Find your next step.</span></h1><p class="lead">Explore common symptoms, learn about potential causes, recognize urgent warning signs, and connect with appropriate medical care—all in one accessible healthcare information platform.</p><div class="actions"><a class="btn primary" href="#explorer">Explore Symptoms →</a><a class="btn" href="#care">Find Hospitals ↗</a></div><p class="small">Educational guidance only · Not a diagnosis · Clinicians make medical decisions</p></div><div class="orbbox" aria-label="Decorative animated three-dimensional medical sphere"><div class="ring"></div><div class="ring two"></div><div class="orb"></div><div class="orbnote">HEALTH • KNOWLEDGE • CARE</div></div></div><section id="explorer"><div class="wrap"><div class="sectionhead"><div class="eyebrow">01 / Symptom explorer</div><h2>Start with what you're feeling.</h2><p>Choose a main symptom and any relevant warning signs. Receive general information and a suggested level of care—not a disease prediction or diagnosis.</p></div><div class="tool"><label class="field" for="symptom">What is your main symptom?</label><select id="symptom"><option value="">Select a symptom</option><option value="headache">Headache</option><option value="fever">Fever</option><option value="cough">Cough</option><option value="stomach">Abdominal pain</option><option value="fatigue">Fatigue</option><option value="dizziness">Dizziness</option><option value="rash">Skin rash</option><option value="chest">Chest discomfort</option><option value="breathing">Breathing difficulty</option></select><label class="field">Are any of these warning signs present?</label><div class="checkgrid"><label class="check"><input type="checkbox" class="redflag" value="Severe trouble breathing"><span>Severe trouble breathing</span></label><label class="check"><input type="checkbox" class="redflag" value="Severe or persistent chest pain"><span>Severe or persistent chest pain</span></label><label class="check"><input type="checkbox" class="redflag" value="New weakness, face drooping, or speech difficulty"><span>New weakness, facial drooping, or difficulty speaking</span></label><label class="check"><input type="checkbox" class="redflag" value="Confusion, fainting, or unresponsiveness"><span>New confusion, fainting, or unresponsiveness</span></label><label class="check"><input type="checkbox" class="redflag" value="Severe sudden headache"><span>Sudden, extremely severe headache</span></label><label class="check"><input type="checkbox" class="redflag" value="Severe allergic reaction"><span>Swelling of tongue/throat or severe allergic reaction</span></label></div><button class="btn primary" id="checkBtn" type="button">View Health Guidance</button><div class="result" id="result" role="status" aria-live="polite"></div><p class="small">If you have an emergency, do not wait for this tool. Seek emergency services immediately. This tool does not collect or transmit your answers.</p></div></div></section><section id="conditions"><div class="wrap"><div class="sectionhead"><div class="eyebrow">02 / Health knowledge</div><h2>Explore common health concerns.</h2><p>Understand symptoms and possible explanations. Many conditions share similar symptoms, so professional assessment is essential.</p></div><div class="grid" id="conditionGrid"><article class="card" data-terms="respiratory cough breathing asthma infection"><div class="ico">🫁</div><h3>Respiratory Health</h3><p>Cough, wheezing, congestion, and breathing changes may have causes ranging from allergies to infections or asthma.</p><span class="pill">Lungs & airways</span></article><article class="card" data-terms="heart chest cardiovascular pain"><div class="ico">❤️</div><h3>Heart & Circulation</h3><p>Learn about chest discomfort, palpitations, and circulation-related warning signs. New or severe chest pain needs urgent evaluation.</p><span class="pill">Cardiovascular</span></article><article class="card" data-terms="headache dizziness brain neurological stroke"><div class="ico">🧠</div><h3>Neurological Health</h3><p>Headaches, dizziness, numbness, and changes in speech can have many causes; sudden neurological changes are emergencies.</p><span class="pill">Brain & nerves</span></article><article class="card" data-terms="stomach abdominal digestion gastrointestinal"><div class="ico">🩺</div><h3>Digestive Health</h3><p>Abdominal pain, nausea, and changes in digestion can be related to diet, infection, or other conditions requiring evaluation.</p><span class="pill">Digestive system</span></article><article class="card" data-terms="fever infection immune fatigue"><div class="ico">🌡️</div><h3>Infections & Fever</h3><p>Fever may accompany viral or bacterial infections and other inflammatory conditions. Severity depends on the full clinical picture.</p><span class="pill">Immune health</span></article><article class="card" data-terms="rash skin allergy dermatology"><div class="ico">✨</div><h3>Skin & Allergies</h3><p>Rashes and itching can arise from irritation, allergy, infection, or other skin disorders.</p><span class="pill">Dermatology</span></article></div></div></section><section id="medicines"><div class="wrap"><div class="sectionhead"><div class="eyebrow">03 / Medicine information</div><h2>Understand your prescribed medicine.</h2><p>Search by generic or common brand name to learn what a medicine is used for, its potential benefits, common side effects and important precautions. Always follow your prescriber's instructions.</p></div><div class="tool"><label class="field" for="medicineSearch">Medicine name</label><div class="searchrow"><input id="medicineSearch" type="search" placeholder="e.g., paracetamol, metformin, amoxicillin" autocomplete="off"><button class="btn primary" id="medicineBtn" type="button">Search medicine</button></div><p class="small">Examples: Panadol, Tylenol, ibuprofen, Brufen, amoxicillin, metformin, omeprazole, cetirizine, atorvastatin. Generic names may differ by country.</p><div id="medicineResult" class="result" role="status" aria-live="polite"></div><div class="notice"><strong>Medicine safety:</strong> Never start, stop, share, or change the dose of prescribed medication based on this website. Side effects vary by person. For trouble breathing, facial or throat swelling, fainting, or other severe reactions, seek emergency help immediately. Ask your pharmacist about interactions, allergies, pregnancy, and other medicines.</div><p class="small">For detailed, regularly maintained drug information, use <a href="https://medlineplus.gov/druginformation.html" target="_blank" rel="noopener noreferrer" style="color:var(--a);text-decoration:underline">MedlinePlus Drug Information</a> (US National Library of Medicine). This demo contains a small educational reference library, not a complete medication database.</p></div></div></section><section id="care"><div class="wrap"><div class="sectionhead"><div class="eyebrow">03 / Care navigation</div><h2>Find hospitals and specialists.</h2><p>Search for healthcare providers in your city using map results. Confirm provider availability, services, and opening hours directly before visiting.</p></div><div class="tool"><label class="field" for="city">City or area</label><input id="city" type="text" placeholder="e.g., Multan, Lahore, London" autocomplete="address-level2"><label class="field" for="specialty">Type of care</label><select id="specialty"><option value="hospital">Hospitals</option><option value="emergency department">Emergency departments</option><option value="general physician">General physicians</option><option value="cardiologist">Cardiologists</option><option value="neurologist">Neurologists</option><option value="pulmonologist">Lung specialists</option><option value="gastroenterologist">Digestive health specialists</option><option value="dermatologist">Dermatologists</option></select><div class="actions"><button class="btn primary" id="findCare" type="button">Search Healthcare Providers ↗</button></div><p id="careMessage" class="small" role="status">Opens a Google Maps search in a new tab. Results are provided by Google Maps, not verified by this website.</p></div></div></section><section id="technology"><div class="wrap"><div class="sectionhead"><div class="eyebrow">05 / Healthcare technology</div><h2>Technology built around better decisions.</h2><p>Exploring the intersection of accessible medical information, responsible AI, and human-centered digital healthcare.</p></div><div class="grid"><article class="card"><div class="ico">◈</div><h3>Health Information Discovery</h3><p>Structured symptom-based navigation helps people locate clear educational health information.</p></article><article class="card"><div class="ico">⌘</div><h3>Responsible AI Principles</h3><p>Safety-first communication, transparency about uncertainty, privacy, and appropriate escalation to qualified clinicians.</p></article><article class="card"><div class="ico">✧</div><h3>Digital Care Access</h3><p>Connecting information-seeking visitors to provider discovery and next-step care options.</p></article></div></div></section><section id="about"><div class="wrap"><div class="sectionhead"><div class="eyebrow">06 / Vision</div><h2>Healthcare knowledge should be easier to navigate.</h2><p>VITALIS is a healthcare information experience focused on clarity, accessibility, and timely medical guidance. It is a demonstration website, not a certified medical device or clinical service. The goal is to help people ask better questions and know when to seek professional care.</p></div><div class="notice"><strong>Medical safety:</strong> Content is general education, not personalized medical advice. No symptom tool can rule out a serious condition. A licensed healthcare professional must evaluate symptoms, make diagnoses, and recommend treatment.</div></div></section></main><footer class="foot"><div class="wrap footin"><div><strong style="color:#fff">VITAL<span style="color:var(--a)">IS</span></strong><div>Intelligent Healthcare Navigation</div></div><div>Educational information only · No medical diagnosis · © <span id="year">2026</span> VITALIS</div></div></footer><script>
+(function () {
+  'use strict';
+
+  const year = document.getElementById('year');
+  if (year) year.textContent = new Date().getFullYear();
+
+  const guidance = {
+    headache: {
+      causes: ['Tension-type headache', 'Migraine', 'Dehydration or another illness'],
+      advice: 'Rest and drink fluids if appropriate. Speak with a clinician if the headache is new, recurrent, worsening, or affecting daily activities.'
+    },
+    fever: {
+      causes: ['Viral infection', 'Bacterial infection', 'Other inflammatory causes'],
+      advice: 'Monitor symptoms and hydration. Seek medical advice for persistent fever, worsening symptoms, or fever in a very young infant.'
+    },
+    cough: {
+      causes: ['Common respiratory infection', 'Allergies or postnasal drip', 'Asthma or airway irritation'],
+      advice: 'Consult a clinician for a persistent cough, blood in mucus, worsening illness, or breathing concerns.'
+    },
+    stomach: {
+      causes: ['Indigestion or constipation', 'Gastrointestinal infection', 'Other abdominal conditions'],
+      advice: 'Severe, localized, persistent, or worsening abdominal pain needs urgent clinical assessment.'
+    },
+    fatigue: {
+      causes: ['Poor sleep or stress', 'Recent illness', 'Anemia, thyroid, or other medical conditions'],
+      advice: 'Discuss unexplained, persistent, or worsening fatigue with a healthcare professional.'
+    },
+    dizziness: {
+      causes: ['Dehydration or low blood pressure', 'Inner-ear problems', 'Medication effects or other causes'],
+      advice: 'Seek assessment for new, repeated, or significant dizziness, especially if it occurs with fainting or neurological symptoms.'
+    },
+    rash: {
+      causes: ['Skin irritation or contact dermatitis', 'Allergic reaction', 'Infection or another skin condition'],
+      advice: 'Seek medical advice for a rapidly spreading, painful, blistering, or fever-associated rash.'
+    },
+    chest: {
+      causes: ['Muscle or chest-wall discomfort', 'Heartburn or reflux', 'Heart or lung conditions'],
+      advice: 'New, severe, persistent, or unexplained chest discomfort needs urgent medical assessment.'
+    },
+    breathing: {
+      causes: ['Asthma or airway irritation', 'Respiratory infection', 'Heart or lung conditions'],
+      advice: 'Breathing difficulty should be assessed promptly. Severe or sudden difficulty breathing is an emergency.'
+    }
+  };
+
+  const checkButton = document.getElementById('checkBtn');
+  if (checkButton) {
+    checkButton.addEventListener('click', function () {
+      const selected = document.getElementById('symptom').value;
+      const result = document.getElementById('result');
+      const redFlags = Array.from(document.querySelectorAll('.redflag:checked')).map(function (item) {
+        return item.value;
+      });
+
+      result.classList.add('show');
+      if (redFlags.length) {
+        result.innerHTML = '<h3>Urgent medical attention may be needed</h3>' +
+          '<p class="warn">You selected one or more warning signs:</p><ul>' +
+          redFlags.map(function (item) { return '<li>' + item + '</li>'; }).join('') +
+          '</ul><p>Please seek emergency medical help now. Do not wait for an online tool or use this result to decide that it is safe to stay home.</p>';
+        return;
+      }
+      if (!selected || !guidance[selected]) {
+        result.innerHTML = '<h3>Please select a symptom</h3><p>Choose your main symptom to view general educational information.</p>';
+        return;
+      }
+      const item = guidance[selected];
+      result.innerHTML = '<h3>General health information</h3>' +
+        '<p><strong>Possible explanations (not a diagnosis):</strong></p><ul>' +
+        item.causes.map(function (cause) { return '<li>' + cause + '</li>'; }).join('') +
+        '</ul><p><strong>Suggested next step:</strong> ' + item.advice + '</p>' +
+        '<p class="small">Symptoms can have many causes. A qualified healthcare professional must assess you and make any diagnosis.</p>';
+    });
+  }
+
+  const medicineInfo = {
+    paracetamol: {
+      name: 'Paracetamol (acetaminophen)',
+      use: 'Commonly used to relieve pain and reduce fever.',
+      caution: 'Taking too much can cause serious liver damage. Check labels carefully because some combination medicines also contain paracetamol.'
+    },
+    panadol: {
+      name: 'Panadol (commonly contains paracetamol)',
+      use: 'Commonly used for pain relief and fever reduction.',
+      caution: 'Check the exact product ingredients. Taking too much paracetamol can cause serious liver damage.'
+    },
+    tylenol: {
+      name: 'Tylenol (commonly contains acetaminophen)',
+      use: 'Commonly used for pain relief and fever reduction.',
+      caution: 'Check the exact product ingredients and avoid accidentally combining multiple products containing acetaminophen.'
+    },
+    ibuprofen: {
+      name: 'Ibuprofen',
+      use: 'A nonsteroidal anti-inflammatory medicine used for pain, fever, and inflammation.',
+      caution: 'It may not be suitable for people with stomach ulcers, kidney problems, certain heart conditions, some types of asthma, or during parts of pregnancy. Ask a clinician or pharmacist.'
+    },
+    brufen: {
+      name: 'Brufen (ibuprofen)',
+      use: 'A brand name commonly used for ibuprofen, which can relieve pain, fever, and inflammation.',
+      caution: 'Check the package ingredients and ask a pharmacist whether it is suitable for you.'
+    },
+    amoxicillin: {
+      name: 'Amoxicillin',
+      use: 'A prescription antibiotic used for certain bacterial infections.',
+      caution: 'It does not treat viral infections. Take antibiotics only when prescribed, follow the prescriber’s directions, and tell them about any penicillin allergy.'
+    },
+    metformin: {
+      name: 'Metformin',
+      use: 'A prescription medicine commonly used to help manage type 2 diabetes.',
+      caution: 'Use only as prescribed. Your clinician may need to consider kidney function and other health factors.'
+    },
+    omeprazole: {
+      name: 'Omeprazole',
+      use: 'A medicine that reduces stomach acid and is used for some acid-related conditions.',
+      caution: 'Ask a healthcare professional how long to use it and whether it is appropriate for your symptoms.'
+    },
+    cetirizine: {
+      name: 'Cetirizine',
+      use: 'An antihistamine commonly used for allergy symptoms such as sneezing, itching, and runny nose.',
+      caution: 'It can cause drowsiness in some people. Check with a pharmacist about other medicines and driving.'
+    },
+    atorvastatin: {
+      name: 'Atorvastatin',
+      use: 'A prescription statin used to lower cholesterol and reduce certain cardiovascular risks.',
+      caution: 'Use as prescribed and discuss unexplained muscle pain, weakness, or other concerning symptoms with your clinician.'
+    }
+  };
+
+  const medicineButton = document.getElementById('medicineBtn');
+  const medicineInput = document.getElementById('medicineSearch');
+  const medicineResult = document.getElementById('medicineResult');
+
+  function searchMedicine() {
+    const query = (medicineInput.value || '').trim().toLowerCase();
+    medicineResult.classList.add('show');
+    if (!query) {
+      medicineResult.innerHTML = '<h3>Enter a medicine name</h3><p>Type a generic or brand name to search this small educational demo library.</p>';
+      return;
+    }
+
+    const found = medicineInfo[query];
+    if (!found) {
+      const safeQuery = encodeURIComponent(query);
+      medicineResult.innerHTML = '<h3>No entry in this demo library</h3>' +
+        '<p>This website’s sample library does not contain “' + query.replace(/[&<>"']/g, '') + '”. This does not mean the medicine is unsafe or unknown.</p>' +
+        '<p><a href="https://medlineplus.gov/druginformation.html" target="_blank" rel="noopener noreferrer" style="color:var(--a);text-decoration:underline">Search trusted medicine information on MedlinePlus</a></p>';
+      return;
+    }
+
+    medicineResult.innerHTML = '<h3>' + found.name + '</h3>' +
+      '<p><strong>Common use:</strong> ' + found.use + '</p>' +
+      '<p><strong>Important precaution:</strong> ' + found.caution + '</p>' +
+      '<p class="small">This is general information, not a recommendation to take this medicine. Follow your prescriber’s instructions and ask a pharmacist about your own situation.</p>' +
+      '<p><a href="https://medlineplus.gov/druginformation.html" target="_blank" rel="noopener noreferrer" style="color:var(--a);text-decoration:underline">Read more on MedlinePlus</a></p>';
+  }
+
+  if (medicineButton) medicineButton.addEventListener('click', searchMedicine);
+  if (medicineInput) {
+    medicineInput.addEventListener('keydown', function (event) {
+      if (event.key === 'Enter') searchMedicine();
+    });
+  }
+
+  const findCareButton = document.getElementById('findCare');
+  if (findCareButton) {
+    findCareButton.addEventListener('click', function () {
+      const city = (document.getElementById('city').value || '').trim();
+      const specialty = document.getElementById('specialty').value;
+      const message = document.getElementById('careMessage');
+
+      if (!city) {
+        message.textContent = 'Please enter a city or area first.';
+        document.getElementById('city').focus();
+        return;
+      }
+
+      const mapsUrl = 'https://www.google.com/maps/search/' +
+        encodeURIComponent(specialty + ' in ' + city);
+      window.open(mapsUrl, '_blank', 'noopener,noreferrer');
+      message.textContent = 'Google Maps search opened. Please verify services, availability, and opening hours directly with the provider.';
+    });
+  }
+})();
+</script>
+
+<button class="vitalis-chat-launcher" id="vitalisChatOpen" type="button" aria-label="Open VITALIS healthcare assistant">
+  <span class="chat-symbol">✦</span><span>Ask VITALIS</span>
+</button>
+<section class="vitalis-chat-panel" id="vitalisChatPanel" role="dialog" aria-label="VITALIS healthcare assistant" aria-modal="false">
+  <header class="vitalis-chat-head">
+    <div><strong>VITALIS Health Assistant</strong><small>Healthcare information guide</small></div>
+    <button class="vitalis-chat-close" id="vitalisChatClose" type="button" aria-label="Close chat">✕</button>
+  </header>
+  <div class="vitalis-chat-messages" id="vitalisChatMessages" aria-live="polite">
+    <div class="vitalis-chat-msg bot">Hello! I’m the VITALIS Health Assistant. I can help you explore general health information, understand medicine information, and find the right section of this website.\n\nWhat would you like help with today?</div>
+  </div>
+  <div class="vitalis-chat-quick">
+    <button type="button" data-chat-prompt="How does the symptom checker work?">Symptom checker</button>
+    <button type="button" data-chat-prompt="How can I learn about a medicine?">Medicine information</button>
+    <button type="button" data-chat-prompt="How do I find a hospital?">Find a hospital</button>
+  </div>
+  <div class="vitalis-chat-disclaimer">Educational information only. I cannot diagnose, prescribe, or replace a healthcare professional.</div>
+  <form class="vitalis-chat-form" id="vitalisChatForm">
+    <input id="vitalisChatInput" type="text" placeholder="Type your question..." maxlength="500" autocomplete="off" aria-label="Type your question">
+    <button type="submit">Send</button>
+  </form>
+</section>
+<script>
+(function(){
+  const panel=document.getElementById('vitalisChatPanel');
+  const openBtn=document.getElementById('vitalisChatOpen');
+  const closeBtn=document.getElementById('vitalisChatClose');
+  const messages=document.getElementById('vitalisChatMessages');
+  const form=document.getElementById('vitalisChatForm');
+  const input=document.getElementById('vitalisChatInput');
+
+  function addMessage(text,who){
+    const item=document.createElement('div');
+    item.className='vitalis-chat-msg '+who;
+    item.textContent=text;
+    messages.appendChild(item);
+    messages.scrollTop=messages.scrollHeight;
+  }
+  function goToSection(id){
+    const target=document.getElementById(id);
+    if(target){target.scrollIntoView({behavior:'smooth'});return true;}
+    return false;
+  }
+  function replyTo(message){
+    const q=message.toLowerCase();
+    if(/emergency|can't breathe|cannot breathe|chest pain|stroke|unconscious|faint|severe allergic|throat swelling/.test(q)){
+      return 'This may be an emergency. Please contact local emergency services or go to the nearest emergency department now. Do not wait for an online chatbot. I cannot assess emergencies.';
+    }
+    if(/hello|hi|hey|assalam|good morning|good evening/.test(q)){
+      return 'Hello! I can guide you around VITALIS. You can ask about the symptom checker, general medicine information, or finding healthcare providers.';
+    }
+    if(/symptom|fever|headache|cough|stomach|fatigue|dizz|rash|pain|sick/.test(q)){
+      goToSection('explorer');
+      return 'You can use the Symptom Explorer section on this page. Select your main symptom and review the general educational information. If symptoms are severe, worsening, or worrying, contact a qualified clinician. This tool does not diagnose conditions.';
+    }
+    if(/medicine|medication|tablet|capsule|drug|panadol|paracetamol|ibuprofen|antibiotic|dose|side effect/.test(q)){
+      goToSection('medicines');
+      return 'Open the Medicine Information section and enter the medicine name. The current website has a small sample reference library and links to MedlinePlus. It cannot confirm whether a medicine is right for you or recommend a dose. Follow your prescriber’s instructions and ask a pharmacist about side effects or interactions.';
+    }
+    if(/hospital|doctor|clinic|specialist|cardiologist|neurologist|physician|find care/.test(q)){
+      goToSection('care');
+      return 'Go to Find Care, enter your city or area, choose the type of provider, and select Search Healthcare Providers. The website opens a Google Maps search. Please confirm services, availability, and opening hours directly with the provider.';
+    }
+    if(/ai|artificial intelligence|how.*work|technology/.test(q)){
+      goToSection('technology');
+      return 'VITALIS demonstrates how digital tools can organize health information and help people navigate care. This version uses predefined educational guidance and website navigation; it is not connected to a medical AI model and does not analyze medical records.';
+    }
+    if(/who are you|what can you do|help/.test(q)){
+      return 'I am the VITALIS website assistant. I can explain how to use the Symptom Explorer, Medicine Information, and Find Care sections, and provide general safety guidance. I cannot diagnose, prescribe, or verify a hospital’s quality.';
+    }
+    return 'I’m not able to answer that reliably from the information built into this demo. Try asking about the symptom checker, medicine information, or finding a hospital. For personal medical advice, please speak with a qualified healthcare professional.';
+  }
+  function send(text){
+    const clean=(text||'').trim();
+    if(!clean)return;
+    addMessage(clean,'user');
+    addMessage(replyTo(clean),'bot');
+  }
+  openBtn.addEventListener('click',()=>{panel.classList.add('open');input.focus();});
+  closeBtn.addEventListener('click',()=>panel.classList.remove('open'));
+  form.addEventListener('submit',e=>{e.preventDefault();send(input.value);input.value='';});
+  document.querySelectorAll('[data-chat-prompt]').forEach(button=>{
+    button.addEventListener('click',()=>send(button.getAttribute('data-chat-prompt')));
+  });
+})();
+</script>
+
+</body>
+</html>
